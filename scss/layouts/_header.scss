@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    height: 106px;
+    padding-top: 32px;
+    border: 1px solid black;
+    background-color: var(--color-primary-light-transparent);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        border: 1px solid grey;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 56px;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    &__menu-link {
+        max-width: fit-content;
+    }
+
+    &__menu-link:hover {
+        font-weight: 700;
+        color: var(--color-primary-blue);
+        cursor: pointer;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__socials-icon {
+        display: block;
+        fill: var(--color-primary-dark);
+    }
+}
