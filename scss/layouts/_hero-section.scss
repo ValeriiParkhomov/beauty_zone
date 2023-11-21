@@ -1,27 +1,65 @@
 .hero-section {
-    padding: 120px 0 200px 205px;
+    padding-top: 86px;
+    padding-bottom: 0;
     background-image: url(/images/hero-section-bg.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
 
+    @media screen and (min-width:$bp-tablet) {
+        padding-top: 100px;
+        padding-bottom: 200px;
+
+    }
+
+    @media screen and (min-width:$bp-desktop) {
+        padding-top: 120px;
+        padding-bottom: 400px;
+    }
+
+    &__primary-text {
+        text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            text-align: left;
+        }
+    }
+
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         color: var(--color-primary-blue);
         text-transform: capitalize;
         font-family: "Play";
-        font-size: 140px;
+        font-size: 54px;
         font-weight: bold;
         line-height: 0.8;
+        text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 140px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
     }
 
     &__button {
-        margin-bottom: 14px;
+        margin: 0 auto 14px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin: 0 0 14px 0;
+        }
     }
 
     &__text {
-        font-size: 12px;
-        line-height: 1.5;
-        margin-left: 20px;
+        font-size: 11px;
+        line-height: 1.6;
+        text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: left;
+            margin-left: 20px;
+        }
     }
 }
