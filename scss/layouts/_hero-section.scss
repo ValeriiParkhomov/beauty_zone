@@ -1,7 +1,6 @@
 .hero-section {
-    padding-top: 86px;
-    padding-bottom: 20px;
-    background-image: url(/images/hero-section-bg.png);
+    padding: 75px 0;
+    background-image: url(../images/hero-section-bg.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
@@ -14,20 +13,25 @@
     }
 
     @media screen and (min-width:$bp-desktop) {
-        padding-top: 120px;
+        padding-top: 125px;
         padding-bottom: 400px;
         background-position-x: 0;
     }
 
     &__primary-text {
         text-align: center;
+        font-size: 12px;
+        margin-bottom: 0;
 
         @media screen and (min-width:$bp-desktop) {
             text-align: left;
+            font-size: 18px;
         }
     }
 
     &__title {
+        display: flex;
+        flex-direction: row;
         margin-bottom: 32px;
         color: var(--color-primary-blue);
         text-transform: capitalize;
@@ -35,12 +39,13 @@
         font-size: 54px;
         font-weight: bold;
         line-height: 0.8;
-        text-align: center;
+        justify-content: center;
 
         @media screen and (min-width:$bp-desktop) {
             font-size: 140px;
             margin-bottom: 40px;
             text-align: left;
+            flex-direction: column;
         }
     }
 

@@ -4,11 +4,11 @@
     left: 0;
     width: 100%;
     padding: 15px 0;
-    background-color: var(--color-primary-light-transparent);
-    backdrop-filter: blur(4px);
+    background-color: transparent;
 
     @media screen and (min-width: $bp-desktop) {
         padding: 32px 0;
+        background-color: var(--color-primary-light-transparent);
     }
 
     &__container {
@@ -63,7 +63,7 @@
         border: none;
         padding: 0;
         background-color: transparent;
-        // fill: var(--color-primary-light);
+        fill: var(--color-primary-light);
 
         @media screen and (min-width: $bp-desktop) {
             display: none;
