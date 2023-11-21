@@ -1,0 +1,27 @@
+.hero-section {
+    padding: 120px 0 200px 205px;
+    background-image: url(/images/hero-section-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 40px;
+        color: var(--color-primary-blue);
+        text-transform: capitalize;
+        font-family: "Play";
+        font-size: 140px;
+        font-weight: bold;
+        line-height: 0.8;
+    }
+
+    &__button {
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+}
