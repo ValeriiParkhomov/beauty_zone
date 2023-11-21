@@ -1,20 +1,22 @@
 .hero-section {
     padding-top: 86px;
-    padding-bottom: 0;
-    background-image: url(/images/hero-section-bg.png);
+    padding-bottom: 20px;
+    background-image: url(../images/hero-section-bg.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
+    background-position-x: -200px;
 
     @media screen and (min-width:$bp-tablet) {
         padding-top: 100px;
         padding-bottom: 200px;
-
+        background-position-x: 0;
     }
 
     @media screen and (min-width:$bp-desktop) {
         padding-top: 120px;
         padding-bottom: 400px;
+        background-position-x: 0;
     }
 
     &__primary-text {
