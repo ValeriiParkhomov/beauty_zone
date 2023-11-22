@@ -3,12 +3,16 @@
 
 
 @import './components/buttons';
+@import './components/link';
 @import './components/logo';
+@import './components/socials';
 
+@import './layouts/about-section';
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/mobile-menu';
 
 
 @import './utils/fonts';
+@import './utils/text';
 @import './utils/variables';

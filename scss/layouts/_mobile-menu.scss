@@ -25,4 +25,17 @@
     &__container {
         padding: 16px 20px;
     }
+
+    &__logo {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        margin-bottom: 16px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 16px;
+    }
 }

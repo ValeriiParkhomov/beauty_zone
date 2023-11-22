@@ -1,0 +1,68 @@
+.about-section {
+    padding-top: 40px;
+    height: 695px;
+
+    &__container {
+        display: flex;
+        gap: 28px;
+    }
+
+    &__info {
+        max-width: 709px;
+        color: var(--color-primary-dark);
+    }
+
+    &__title {
+        max-width: 530px;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 1.7;
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: 655px;
+    }
+
+    &__photo-before {
+        position: absolute;
+        top: -40px;
+        border-radius: 180px;
+    }
+
+    &__photo-after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 180px;
+    }
+
+    &__blue-star {
+        position: absolute;
+        top: 44px;
+        right: -18px;
+    }
+
+    &__dark-star {
+        position: absolute;
+        top: 320px;
+        left: 130px;
+    }
+
+    &__grey-star {
+        position: absolute;
+        top: 272px;
+        right: 10px;
+    }
+
+
+
+}

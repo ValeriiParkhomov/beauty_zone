@@ -14,8 +14,16 @@
 
     @media screen and (min-width:$bp-desktop) {
         padding-top: 125px;
-        padding-bottom: 400px;
+        padding-bottom: 230px;
+        height: 780px;
         background-position-x: 0;
+    }
+
+    &__container {
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-left: 105px;
+        }
     }
 
     &__primary-text {
@@ -26,6 +34,7 @@
         @media screen and (min-width:$bp-desktop) {
             text-align: left;
             font-size: 18px;
+            margin-bottom: 16px;
         }
     }
 
@@ -40,12 +49,14 @@
         font-weight: bold;
         line-height: 0.8;
         justify-content: center;
+        gap: 10px;
 
         @media screen and (min-width:$bp-desktop) {
             font-size: 140px;
             margin-bottom: 40px;
             text-align: left;
             flex-direction: column;
+
         }
     }
 

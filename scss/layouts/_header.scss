@@ -32,30 +32,15 @@
         }
     }
 
-    &__menu-link:hover {
-        font-weight: 700;
-        color: var(--color-primary-blue);
-        cursor: pointer;
-    }
-
     &__socials {
         display: none;
 
         @media screen and (min-width: $bp-desktop) {
             display: flex;
-            gap: 32px;
+            gap: 35px;
         }
     }
 
-    &__socials-icon {
-        display: block;
-        fill: var(--color-primary-dark);
-    }
-
-    &__socials-icon:hover {
-        display: block;
-        fill: var(--color-primary-light);
-    }
 
     &__burger {
         width: 24px;
