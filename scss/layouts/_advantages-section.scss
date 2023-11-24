@@ -15,9 +15,6 @@
     }
 
     &__title {
-        font-size: 64px;
-        font-family: "Play", sans-serif;
-        font-weight: 700;
         text-align: center;
         margin-bottom: 48px;
     }
@@ -30,7 +27,15 @@
     &__card {
         background-color: var(--color-primary-light);
         border-radius: 32px;
-        padding: 85px 32px 24px 32px;
+        padding: 34px 32px 24px 32px;
         line-height: 1.33;
+        box-shadow: 0 4px 4px var(--color-dark-transparent);
+    }
+
+    &__card-icon {
+        display: block;
+        margin: 0 auto;
+        fill: var(--color-primary-blue);
+        margin-bottom: 8px;
     }
 }
