@@ -1,0 +1,24 @@
+.contacts-section {
+    margin-top: 96px;
+
+    &__container {
+        padding-left: 64px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__block {
+        display: flex;
+        gap: 32px;
+
+    }
+
+    &__map {
+        width: 604px;
+        height: 480px;
+        border-radius: 32px;
+    }
+
+}
