@@ -169,12 +169,39 @@
             <div class="contacts-section__container">
                 <h2 class="contacts-section__title title">Як нас <span class="text-brand--lowercase">знайти</span></h2>
                 <div class="contacts-section__block">
-                    <!-- Тут буде форма -->
                     <iframe class="contacts-section__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.363985041723!2d-122.44372319951084!3d37.758062733703646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e067d09e6f1%3A0xb72ce94acb6e9dc1!2sKite%20Hill!5e0!3m2!1suk!2sua!4v1701014041593!5m2!1suk!2sua"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+                    <div class="contacts-section__form-block">
+                        <p class="modal__text">Запишіться <span class="text-brand--lowercase">безкоштовно</span><br> та
+                            отримайте подарунок
+                        </p>
+                        <form class="contacts-section__form" name="contacts-section__form">
+                            <div class="contacts-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-name"></label>
+                                <input class="input__control" id="user-name" name="user-name" type="text"
+                                    placeholder="Ваше ім'я та прізвище" required>
+                            </div>
+                            <div class="contacts-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-phone"></label>
+                                <input class="input__control" id="user-phone" name="user-phone" type="tel"
+                                    placeholder="Ваш номер телефону" required>
+                            </div>
+                            <div class="contacts-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-mail"></label>
+                                <input class="input__control" id="user-mail" name="user-mail" type="email"
+                                    placeholder="Ваша електронна пошта" required>
+                            </div>
+                            <button class="contacts-section__button-send button " type="button">Записатись
+                                безкоштовно</button>
+                            <p class="modal__terms">Натискаючи на кнопку я погоджуюсь<br> <a class="modal__terms--link"
+                                    href="#">з політикою
+                                    конфіденційності</a></p>
+                        </form>
+                    </div>
+
                 </div>
 
             </div>

@@ -21,4 +21,20 @@
         border-radius: 32px;
     }
 
+    &__form-block {
+        background-color: var(--color-primary-dark);
+        background-image: url(/images/contacts-form-bg.png);
+        border-radius: 32px;
+        padding: 48px 56px;
+        max-height: 480px;
+    }
+
+    &__form-field {
+        margin-bottom: 16px;
+    }
+
+    &__button-send {
+        margin: 0 auto;
+    }
+
 }
