@@ -188,26 +188,33 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2>Замовити дзвінок</h2>
-            <p>Запишіться <span>безкоштовно</span> та отримайте подарунок</p>
-            <form name="modal-form">
-                <div>
-                    <label class="input__label visually-hidden" for="user-name"></label>
-                    <input class="input_control" id="user-name" name="user-name" type="text"
-                        placeholder="Ваше ім'я та прізвище" required>
-                </div>
-                <div>
-                    <label class="input__label visually-hidden" for="user-phone"></label>
-                    <input class="input_control" id="user-phone" name="user-phone" type="tel"
-                        placeholder="Ваш номер телефону" required>
-                </div>
-                <div>
-                    <label class="input__label visually-hidden" for="user-mail"></label>
-                    <input class="input_control" id="user-mail" name="user-mail" type="email"
-                        placeholder="Ваша електронна пошта" required>
-                </div>
-                <button type="button">Записатись безкоштовно</button>
-            </form>
+            <div class="modal__container">
+                <h2 class="modal__title title">Замовити<br> дзвінок</h2>
+                <p class="modal__text">Запишіться <span class="text-brand--lowercase">безкоштовно</span><br> та
+                    отримайте подарунок
+                </p>
+                <form class="modal__form" name="modal">
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-name"></label>
+                        <input class="input__control" id="user-name" name="user-name" type="text"
+                            placeholder="Ваше ім'я та прізвище" required>
+                    </div>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-phone"></label>
+                        <input class="input__control" id="user-phone" name="user-phone" type="tel"
+                            placeholder="Ваш номер телефону" required>
+                    </div>
+                    <div class="modal__form-field input">
+                        <label class="input__label visually-hidden" for="user-mail"></label>
+                        <input class="input__control" id="user-mail" name="user-mail" type="email"
+                            placeholder="Ваша електронна пошта" required>
+                    </div>
+                    <button class="modal__button-send button " type="button">Записатись безкоштовно</button>
+                    <p class="modal__terms">Натискаючи на кнопку я погоджуюсь<br> <a class="modal__terms--link"
+                            href="#">з політикою
+                            конфіденційності</a></p>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>

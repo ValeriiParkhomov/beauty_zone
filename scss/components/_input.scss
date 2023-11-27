@@ -1,0 +1,25 @@
+input {
+    width: 100%;
+    padding: 18px 33px;
+    border-radius: 32px;
+    background: transparent;
+    border: 2px solid var(--color-secondary-grey);
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+.input {
+    &__control {
+
+        &:focus {
+            outline: none;
+            color: var(--color-primary-light);
+            background: var(--color-secondary-grey);
+        }
+
+        &::placeholder {
+            color: var(--color-primary-light);
+        }
+
+    }
+}
