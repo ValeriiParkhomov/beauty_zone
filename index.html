@@ -12,7 +12,9 @@
     <header class="header">
         <div class="container">
             <div class="header__container">
-                <div class="logo">Beauty <span>Zone</span></div>
+                <a href="#">
+                    <div class="logo">Beauty <span>Zone</span></div>
+                </a>
                 <ul class="header__menu">
                     <li class="link">Про нас</li>
                     <li class="link">Чому ми</li>
@@ -83,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="container">
             <div class="about-section__container">
                 <div class="about-section__info">
@@ -109,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages-section">
+    <section class="advantages-section" id="advantages-section">
         <div class="container">
             <div class="advantages-section__container">
                 <img class="advantages-section__background" src="./images/advantages-bg.png" alt="Блакитний градієнт">
@@ -139,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="procedures-section">
+    <section class="procedures-section" id="procedures-section">
         <div class="container">
             <div class="procedures-section__container">
                 <h2 class="procedures-section__title title">Наші <span class="text-brand--lowercase">процедури</span>
@@ -164,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts-section">
+    <section class="contacts-section" id="contacts-section">
         <div class="container">
             <div class="contacts-section__container">
                 <h2 class="contacts-section__title title">Як нас <span class="text-brand--lowercase">знайти</span></h2>
@@ -207,7 +209,55 @@
             </div>
         </div>
     </section>
-    <!-- <footer> </footer> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <a href="#">
+                        <div class="logo">Beauty <span>Zone</span></div>
+                    </a>
+                    <ul class="footer__menu">
+                        <li><a class="footer__address-link" href="#about-section">Про нас</a></li>
+                        <li><a class="footer__address-link" href="#advantages-section">Чому ми</a></li>
+                        <li><a class="footer__address-link" href="#procedures-section">Наші процедури</a></li>
+                        <li><a class="footer__address-link" href="#contacts-section">Контакти</a></li>
+                    </ul>
+                </nav>
+                <address class="footer__address">
+                    <ul class="footer__address-contacts">
+                        <li><a class="footer__address-link" href="tel:+38(096)0000007" type="tel">+ 38 (096) 000 00
+                                07</a></li>
+                        <li><a class="footer__address-link" href="mailto:beautyzone@gmail.com"
+                                type="email">beautyzone@gmail.com</a></li>
+                        <li><a class="footer__address-link" href="https://maps.app.goo.gl/FTAmWWpmxCksTNbc8"
+                                target="_blank">Україна, м. Київ,<br> вул.
+                                Тараса Шевченка 5</a></li>
+                        <li class="footer__socials">
+                            <a class="footer__socials-link" href="tel:+38(096)0000007">
+                                <svg class="footer__socials-icon" width="32" , height="32">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__socials-link" href="#">
+                                <svg class="footer__socials-icon" width="32" , height="32">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__socials-link" href="#">
+                                <svg class="footer__socials-icon" width="32" , height="32">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__address-terms">
+                        <a class=" footer__address-link" href="#" target="_blank">Політика конфіденційності</a>
+                        <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal__btn-close modal-btn-close" type="button">

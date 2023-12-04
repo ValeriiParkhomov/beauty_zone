@@ -1,0 +1,40 @@
+.footer {
+    padding: 56px 0;
+    background-color: var(--color-primary-dark);
+    margin-top: 96px;
+    background-image: url(../images/footer-bg.png);
+
+    &__container,
+    &__nav,
+    &__address {
+        display: flex;
+        gap: 186px;
+    }
+
+    &__menu,
+    &__address-contacts,
+    &__address-link {
+        color: var(--color-primary-light);
+        width: 203px;
+        font-size: 16px;
+    }
+
+    &__address-link {
+        padding-bottom: 16px;
+    }
+
+    &__address-copyright {
+        color: var(--color-secondary-grey);
+        font-size: 13px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__socials-icon {
+        fill: var(--color-primary-light);
+
+    }
+}
