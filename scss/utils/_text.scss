@@ -3,13 +3,24 @@
     text-transform: capitalize;
 }
 
+.text-brand-dark {
+    color: var(--color-primary-dark);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
 .text-brand--lowercase {
     color: var(--color-primary-blue);
     text-transform: lowercase;
 }
 
 .title {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    font-size: 64px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+
+    @media screen and (min-width:$bp-desktop) {
+        font-family: "Play", sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+    }
 }

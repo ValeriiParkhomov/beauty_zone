@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Beauty Zone</title>
 </head>
 
@@ -44,7 +45,7 @@
                 <div class="mobile-menu">
                     <div class="mobile-menu__container">
                         <button class="mobile-menu__btn-close menu-btn-close" type="button">
-                            <svg class="icon-close" width="32" , height="32">
+                            <svg class="icon-close" width="24" , height="24">
                                 <use href="./images/sprite.svg#icon-close"></use>
                             </svg>
                         </button>
@@ -76,6 +77,7 @@
         </div>
     </header>
     <section class="hero-section">
+        <div class="hero-section__gradient"></div>
         <div class="container">
             <div class="hero-section__container">
                 <p class="hero-section__primary-text">Косметологічна клініка</p>
@@ -93,11 +95,14 @@
                     </h2>
                     <p class="about-section__text">Наша косметологічна клініка пропонує вам професійні послуги
                         з догляду за шкірою обличчя та тіла.</p>
-                    <p class="about-section__text">B beauty zone ми гарантуємо найвищі стандарти якості<br> та приємний
+                    <p class="about-section__text">B <span class="text-brand-dark">beauty zone</span> ми гарантуємо
+                        найвищі стандарти якості<br> та приємний
                         сервіс. Наші косметологічні
                         процедури та
-                        препарати допоможуть вам підтримувати свою красу та молодість. <br>З нами краса назавжди!>
+                        препарати допоможуть вам підтримувати свою красу та молодість. <br>З нами краса назавжди
                     </p>
+                    <img class="about-section__info-bg-star" width="40" height="40" src="./images/dark-star.png"
+                        alt="Темна фонова зірка">
                 </div>
                 <div class="about-section__photo">
                     <img class="about-section__photo-before" src="./images/woman-before-procedures.jpg"
@@ -114,7 +119,6 @@
     <section class="advantages-section" id="advantages-section">
         <div class="container">
             <div class="advantages-section__container">
-                <img class="advantages-section__background" src="./images/advantages-bg.png" alt="Блакитний градієнт">
                 <h2 class="advantages-section__title title">Чому люди <br><span class="text-brand--lowercase">обирають
                         нас</span>
                 </h2>
@@ -146,27 +150,45 @@
             <div class="procedures-section__container">
                 <h2 class="procedures-section__title title">Наші <span class="text-brand--lowercase">процедури</span>
                 </h2>
-                <div class="procedures__cards">
-                    <article class="procedures__card">
-                        <h3 class="procedures__text">Маски <br>для обличчя</h3>
-                        <img class="procedures__image" src="./images/procedures-masks.jpg"
-                            alt="Лікар накладає маску на обличчя дівчині">
-                    </article>
-                    <article class="procedures__card">
-                        <h3 class="procedures__text">Ін'єкції <br>для обличчя</h3>
-                        <img class="procedures__image" src="./images/procedures-injections.jpg"
-                            alt="Лікар виконує ін'єкцію омолодження пацієнтці">
-                    </article>
-                    <article class="procedures__card">
-                        <h3 class="procedures__text">Очищення <br>обличчя</h3>
-                        <img class="procedures__image" src="./images/procedures-cleansing.jpg"
-                            alt="Лікар спеціальним інструментом віконує очищення шкіри поцієнтки">
-                    </article>
+                <button class="procedures__button corousel-button prev" type="button">
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-Arrow"></use>
+                    </svg>
+                </button>
+                <div class="swiper">
+                    <ul class="procedures__cards swiper-wrapper">
+                        <li class="swiper-slide">
+                            <article class="procedures__card">
+                                <h3 class="procedures__text">Маски <br>для обличчя</h3>
+                                <img class="procedures__image" src="./images/procedures-masks.jpg"
+                                    alt="Лікар накладає маску на обличчя дівчині">
+                            </article>
+                        </li>
+                        <li class="swiper-slide">
+                            <article class="procedures__card">
+                                <h3 class="procedures__text">Ін'єкції <br>для обличчя</h3>
+                                <img class="procedures__image" src="./images/procedures-injections.jpg"
+                                    alt="Лікар виконує ін'єкцію омолодження пацієнтці">
+                            </article>
+                        </li>
+                        <li class="swiper-slide">
+                            <article class="procedures__card">
+                                <h3 class="procedures__text">Очищення <br>обличчя</h3>
+                                <img class="procedures__image" src="./images/procedures-cleansing.jpg"
+                                    alt="Лікар спеціальним інструментом віконує очищення шкіри поцієнтки">
+                            </article>
+                        </li>
+                    </ul>
                 </div>
+                <button class="procedures__button corousel-button next" type="button">
+                    <svg width="16" height="16">
+                        <use href="./images/sprite.svg#icon-Arrow"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
-    <section class="contacts-section" id="contacts-section">
+    <!-- <section class="contacts-section" id="contacts-section">
         <div class="container">
             <div class="contacts-section__container">
                 <h2 class="contacts-section__title title">Як нас <span class="text-brand--lowercase">знайти</span></h2>
@@ -208,8 +230,8 @@
 
             </div>
         </div>
-    </section>
-    <footer class="footer">
+    </section> -->
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <nav class="footer__nav">
@@ -257,7 +279,7 @@
                 </address>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal__btn-close modal-btn-close" type="button">
@@ -294,6 +316,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/procedures-slider.js"></script>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>

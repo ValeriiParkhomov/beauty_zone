@@ -1,12 +1,17 @@
 .button {
     display: block;
     padding: 16px 32px;
+    font-size: 16px;
     color: var(--color-primary-light);
     font-weight: 700;
     background-color: var(--color-primary-blue);
     border: 2px solid var(--color-primary-blue);
     border-radius: 32px;
-    cursor: pointer
+    cursor: pointer;
+
+    @media screen and (min-width:$bp-desktop) {
+        font-size: 18px;
+    }
 }
 
 .button:hover {
