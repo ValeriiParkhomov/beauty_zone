@@ -4,18 +4,17 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
-        480: {
-            slidesPerView: 2,
-            spaceBetween: 16
-        },
-        // when window width is >= 640px
         768: {
+            slidesPerView: 2,
+        },
+        1280: {
             slidesPerView: 3,
-            spaceBetween: 16
         }
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.pagination',
+        bulletClass: 'pagination__button',
+        bulletActiveClass: 'pagination__button--active',
     },
 
     navigation: {

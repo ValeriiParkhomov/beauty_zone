@@ -1,11 +1,5 @@
 .procedures {
 
-    &__cards {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-    }
-
     &__card {
         position: relative;
         width: 344px;
@@ -34,4 +28,16 @@
         margin-top: 372px;
         text-align: center;
     }
+
+    &__button.prev,
+    &__button.next {
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    &__button.next {
+        rotate: 180deg;
+    }
+
+
 }

@@ -1,13 +1,16 @@
 .procedures-section {
 
+
     &__container {
-        margin-top: 96px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        max-width: 1216px;
     }
 
     &__title {
         text-align: center;
     }
-
 }
 
 .procedures {
@@ -19,4 +22,6 @@
         background-color: transparent;
         border-radius: 50%;
     }
+
+
 }
