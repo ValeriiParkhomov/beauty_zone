@@ -2,11 +2,11 @@
 
     &__card {
         position: relative;
-        width: 344px;
-        height: 456px;
         background: linear-gradient(180deg, rgb(1, 28, 68, 0) 55.21%, rgb(1, 28, 68, 0.4) 72.58%, rgb(1, 28, 68, 1) 100%);
         border-radius: 4px 120px;
         overflow: hidden;
+
+
     }
 
     &__image {
@@ -21,12 +21,17 @@
 
     &__text {
         width: 100%;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.18;
         color: var(--color-primary-light);
-        margin-top: 372px;
+        margin-top: 344px;
         text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 20px;
+            margin-top: 372px;
+        }
     }
 
     &__button.prev,
