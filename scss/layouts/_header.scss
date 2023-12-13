@@ -16,9 +16,6 @@
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (min-width: $bp-desktop) {
-            gap: 240px;
-        }
     }
 
     &__menu {
@@ -26,9 +23,8 @@
 
         @media screen and (min-width: $bp-desktop) {
             display: flex;
-            flex-shrink: 0;
-            gap: 56px;
-            justify-content: center;
+            width: 526px;
+            justify-content: space-between;
         }
     }
 
@@ -65,4 +61,20 @@
     background-color: var(--color-primary-light);
     opacity: 25%;
     filter: blur(10px);
+}
+
+.about-link {
+    width: 75px;
+}
+
+.advantages-link {
+    width: 80px;
+}
+
+.procedures-link {
+    width: 150px;
+}
+
+.contacts-link {
+    width: 85px;
 }
