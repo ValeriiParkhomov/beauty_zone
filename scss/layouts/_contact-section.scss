@@ -1,5 +1,9 @@
 .contacts-section {
-    margin-top: 96px;
+    margin-top: 40px;
+
+    @media screen and (min-width:$bp-desktop) {
+        margin-top: 96px;
+    }
 
     &__container {
         padding-left: 0;
@@ -41,9 +45,9 @@
 
     &__form-block {
         min-width: 320px;
-        max-height: 480px;
+        min-height: 434px;
         margin: 0 auto;
-        padding: 48px 56px;
+        padding: 42px 24px;
         background-color: var(--color-primary-dark);
         background-image: url(/images/contacts-form-bg.png);
         border-radius: 32px;
@@ -51,6 +55,7 @@
         @media screen and (min-width:$bp-desktop) {
             min-width: 424px;
             margin: 0;
+            padding: 48px 56px;
         }
 
     }

@@ -1,14 +1,27 @@
 .footer {
-    padding: 56px 0;
+    padding: 32px 0 66px 0;
     background-color: var(--color-primary-dark);
-    margin-top: 96px;
+    margin-top: 0;
     background-image: url(../images/footer-bg.png);
+
+    @media screen and (min-width:$bp-desktop) {
+        padding: 56px 0;
+        margin-top: 96px;
+    }
 
     &__container,
     &__nav,
     &__address {
         display: flex;
-        gap: 186px;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            flex-direction: row;
+            gap: 186px;
+            align-items: baseline;
+        }
     }
 
     &__menu,
@@ -17,10 +30,33 @@
         color: var(--color-primary-light);
         width: 203px;
         font-size: 16px;
+        text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            text-align: left;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 26px;
+    }
+
+    &__address {
+        flex-direction: column;
+        gap: 0;
     }
 
     &__address-link {
         padding-bottom: 16px;
+
+    }
+
+    &__address-contacts {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: block;
+        }
     }
 
     &__address-copyright {
@@ -36,5 +72,21 @@
     &__socials-icon {
         fill: var(--color-primary-light);
 
+    }
+}
+
+.privacy {
+    display: block;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: none;
+    }
+}
+
+.privacy-mobile {
+    display: none;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: block;
     }
 }
