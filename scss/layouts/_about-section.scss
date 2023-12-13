@@ -2,6 +2,10 @@
     padding-top: 0;
     height: 365px;
 
+    @media screen and (min-width:$bp-tablet) {
+        height: 260px;
+    }
+
     @media screen and (min-width:$bp-desktop) {
         padding-top: 40px;
         height: 695px;
